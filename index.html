@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dave Gray" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="HTML.png" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS.css" type="text/css" />
+  </head>
+
+  <body>
+    <h1>My Goals for the Year</h1>
+
+    <hr />
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a Vacation</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact &nbsp;Cheliyan</a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <section id="html">
+      <h2>I'm Ready to Learn HTML</h2>
+      <p>This is my first web page.</p>
+      <img
+        src="HTML.png"
+        alt="HTML5 Logo"
+        title="I am learning HTML5"
+        width="300"
+        height="300"
+      />
+      <figure>
+        <figcaption>An Example of HTML5 code</figcaption>
+        <p>
+          <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        </p>
+      </figure>
+      <h3>My Daily Schedule</h3>
+      <p>Let me tell you how:</p>
+      <ol>
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my schedule.</li>
+        <li>
+          ...I use resources from
+          <abbr title="Mozilla Developer Network">
+            <a href="https://developer.mozilla.org/">MDN</a> </abbr
+          >.
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <section id="vacation">
+      <h2>I Am Also Planning a Vacation</h2>
+      <p>I've been working hard and <em>really need a getaway</em>.</p>
+      <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+      <h3>Places I'd Like to Visit</h3>
+      <ul>
+        <li>
+          <p>I've heard good things about the Kohli Cover Drive.</p>
+          <figure>
+            <img
+              src="Images/Cover Driver.webp"
+              alt="Kohli cover Drive"
+              title="I want to play like kohli cover Drive."
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>Whataaaaa Shot Man</figcaption>
+          </figure>
+        </li>
+        <li>
+          <p>I've heard good things about going here:</p>
+          <address>
+            Margaritaville Island Reserve Riviera Cancún<br />
+            Bahia Petempich Puerto Morelos, Mexico<br />
+            Colonia Morelos, México 77580
+          </address>
+          <figure>
+            <img
+              src="Images/Square drive.webp"
+              alt="Square Drive"
+              title="King Kohli!"
+              width="400"
+              height="267"
+              loading="lazy"
+            />
+            <figcaption>Perfecttttttttt</figcaption>
+          </figure>
+        </li>
+      </ul>
+      <!-- TODO: Add more places -->
+      <h3>Places I Want to Avoid</h3>
+      <dl>
+        <dt>North Pole</dt>
+        <dd>I hear this is <strong>cold</strong>!</dd>
+
+        <dt>South Pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mountain Tops</dt>
+        <dd>These are also cold.</dd>
+      </dl>
+    </section>
+    <p><b>My Daily Routine</b></p>
+    ...
+    <table>
+      <caption>
+        2019 Fourth Quarter Report
+      </caption>
+      <thead>
+        <tr>
+          <th><!-- Intentionally Blank --></th>
+          <th>October</th>
+          <th>November</th>
+          <th>December</th>
+        </tr>
+
+        <tr></tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Projected</th>
+          <td>$820,180</td>
+          <td>$841,640</td>
+          <td>$732,270</td>
+        </tr>
+        <tr>
+          <th>Actual</th>
+          <td>$850,730</td>
+          <td>$892,580</td>
+          <td>$801,240</td>
+        </tr>
+        <tr>
+          <th>Utilization</th>
+          <td>83%</td>
+          <td>90%</td>
+          <td>75%</td>
+        </tr>
+      </tbody>
+    </table>
+    ..
+
+    <p id="Contact"> Dail The Number &nbsp; &nbsp; 9791332285
+        <form action="https://httpbin.org/get",method="get">
+            <fieldset>
+                <legend>Favourites</legend>
+                <!--fieldset element is used for making one section for easy use i.e fllows semantic structure-->
+            <label for="firstName">Firstname:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Cheliyan" autocomplete="on" required>
+            <!--autocomplete=shows history of the text box
+            Required = mandatory need to fill-->
+        <p>
+            <label for="lastName">Lastname:</label>
+            <input type="text" name="lastName" id="lastName" value="Kaliyappan" autocomplete="on">
+        </p>    
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password"
+            autocomplete="on" required>
+        </p>
+        <p>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Number"
+            autocomplete="on" required pattern="[0-9]{4}[0-9]{3}[0-9]{3}">
+            <!--Pattern attribute used for what type of input we need to enter-->
+        </p>
+        <p>
+           <label for="selction">Favouirte Cricket Player</label>
+           <select name="selction" id="selction" multiple size="2">
+            <!--for selecting more than one option we can give the multiple attribute by mentioning size-->
+
+            <option value="kohli">Virat kohli</option>
+            <option value="dhoni">MS Dhoni</option>
+            <option value="smith">Steve Smith</option>
+            <!--optgroup which is used for grouping the option-->
+           </select>
+        </p>
+        </fieldset>
+        <fieldset>
+            <!--Code for Radio button-->
+            <legend>Place</legend>
+            <label for="nativePlace">Choose Your Native</label>
+            <p>
+            <input type="radio" name="nativePlace" id="salem" value="Coimbatore">
+            <label for="salem">Salem</label>
+             </p>
+             <p>
+            <input type="radio" name="nativePlace" id="cbe" value="Salem">
+            <label for="cbe">Coimbatore</label>
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <!--Code for CheckBox-->
+            <legend>Favourite Tourism Places</legend>
+            <label for="tourPlaces">Choose Your Must Visit Places</label>
+            <p>
+            <input type="checkbox" name="tourPlaces" id="Tourism" value="Coimbatore">
+            <label for="Tourism">Shimla</label>
+             </p>
+             <p>
+            <input type="checkbox" name="tourPlaces" id="Tourism" value="Munnar">
+            <label for="Tourism">Munnar</label>
+            </p>
+            <p>
+                <input type="checkbox" id="Ooty" name="tourPlaces">
+                <label for="Ooty">Ooty</label>
+            </p>
+            
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        </form>
+    </p>
+    <hr />
+    &lt;&lt;&lt; &copy; <a href="#">Cheliyan</a> &gt;&gt;&gt;
+    <p>
+      <a href="#">Back to Top</a>
+    </p>
+  </body>
+</html>
